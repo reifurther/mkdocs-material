@@ -17,7 +17,7 @@
       
         <link rel="shortcut icon" href="../assets/images/favicon.png">
       
-      <meta name="generator" content="mkdocs-0.16.1, mkdocs-material-1.4.1">
+      <meta name="generator" content="mkdocs-0.16.1, mkdocs-material-1.5.0">
     
     
       
@@ -28,7 +28,7 @@
       <script src="../assets/javascripts/modernizr-56ade86843.js"></script>
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application-76741b64bc.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application-d848f886dc.css">
       
         <link rel="stylesheet" href="../assets/stylesheets/application-66fa0d9bba.palette.css">
       
@@ -94,8 +94,9 @@
   <div class="md-search__overlay"></div>
   <div class="md-search__inner">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
       <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
@@ -374,6 +375,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#150-_-march-24-2017" title="1.5.0  _ March 24, 2017" class="md-nav__link">
+    1.5.0  _ March 24, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#141-_-march-16-2017" title="1.4.1  _ March 16, 2017" class="md-nav__link">
     1.4.1  _ March 16, 2017
   </a>
@@ -594,6 +602,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#150-_-march-24-2017" title="1.5.0  _ March 24, 2017" class="md-nav__link">
+    1.5.0  _ March 24, 2017
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#141-_-march-16-2017" title="1.4.1  _ March 16, 2017" class="md-nav__link">
     1.4.1  _ March 16, 2017
   </a>
@@ -769,11 +784,24 @@
 
 <p>To determine the currently installed version, use the following command:</p>
 <div class="codehilite"><pre><span></span>pip show mkdocs-material <span class="p">|</span> grep -E ^Version
-<span class="c1"># Version 1.4.1</span>
+<span class="c1"># Version 1.5.0</span>
 </pre></div>
 
 
 <h2 id="changelog">Changelog<a class="headerlink" href="#changelog" title="Permanent link">&para;</a></h2>
+<h3 id="150-_-march-24-2017">1.5.0 <small> _ March 24, 2017</small><a class="headerlink" href="#150-_-march-24-2017" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Added support for localization of search placeholder</li>
+<li>Added keyboard events for quick access of search</li>
+<li>Added keyboard events for search control</li>
+<li>Added opacity on hover for search buttons</li>
+<li>Added git hook to skip CI build on non-src changes</li>
+<li>Fixed non-resetting search placeholder when input is cleared</li>
+<li>Fixed error for unescaped parentheses in search term</li>
+<li>Fixed <a href="https://github.com/squidfunk/mkdocs-material/issues/229">#229</a>: Button to clear search missing</li>
+<li>Fixed <a href="https://github.com/squidfunk/mkdocs-material/issues/231">#231</a>: Escape key doesn't exit search</li>
+<li>Removed old-style figures from font feature settings</li>
+</ul>
 <h3 id="141-_-march-16-2017">1.4.1 <small> _ March 16, 2017</small><a class="headerlink" href="#141-_-march-16-2017" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Fixed invalid destructuring attempt on NodeList (in Safari, Edge, IE)</li>
@@ -1038,7 +1066,7 @@
       
     </div>
     
-      <script src="../assets/javascripts/application-3964c0cb56.js"></script>
+      <script src="../assets/javascripts/application-c6f9af8d0c.js"></script>
       <script>app.initialize({url:{base:".."}})</script>
       
     
